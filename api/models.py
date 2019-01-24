@@ -13,3 +13,10 @@ class Product(models.Model):
         ('smartphone', 'Smartphone')
     )
     category = models.CharField(max_length=16, choices=CATEGORIES)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Produto'
+        verbose_name_plural = 'Produtos'
