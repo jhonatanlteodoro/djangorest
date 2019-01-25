@@ -4,7 +4,7 @@ from django.db import models
 
 class Product(models.Model):
     name = models.CharField(max_length=100)
-    create_on = models.DateTimeField(default=datetime.now)
+    created_on = models.DateTimeField(default=datetime.now)
 
     CATEGORIES = (
         ('notebooks', 'Notebooks'),
